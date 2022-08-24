@@ -1,3 +1,45 @@
+@font-face {
+  font-family: "CapitalisTypOasis";
+  src: url("/fonts/CapitalisTypOasis/regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Times New Roman";
+  src: url("/fonts/Times New Roman/regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Times New Roman";
+  src: url("/fonts/Times New Roman/bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Times New Roman";
+  src: url("/fonts/Times New Roman/italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Achilles";
+  src: url("/fonts/Achilles/regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Times New Roman, serif;
+    @apply bg-[url('/images/background.png')];
+  }
+}
